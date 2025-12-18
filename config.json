@@ -1,13 +1,26 @@
 {
-	"businessName": "Pretty Blue Co",
-	"tagline": "I specialize in custom business and personal apparel! No order minimums!",
-	"contactEmail": "prettyblueco@gmail.com",
-	"foundingYear": "2025",
-	"colors": {
-		"primary": "#9FC9E5",
-		"secondary": "#60a5fa",
-		"accent": "#f59e0b",
-		"bgPage": "#ffffff",
-		"textDefault": "#0f172a"
-	}
+  "businessName": "Pretty Blue Co",
+  "tagline": "I specialize in custom business and personal apparel! No order minimums!",
+  "contactEmail": "prettyblueco@gmail.com",
+  "foundingYear": "2025",
+  "colors": {
+    "primary": "#38BDF8",
+    "secondary": "#F8C7CC",
+    "accent": "#0284C7",
+    "bg-page": "#FFFFFFAC",
+    "bg-page-light": "#f1f5f9",
+    "bg-page-dark": "#0F172A",
+    "bg-surface": "#f8fafc",
+    "bg-surface-light": "#e2e8f0",
+    "bg-surface-dark": "#1E293B",
+    "border": "#e2e8f0",
+    "border-light": "#cbd5e1",
+    "border-dark": "#1e3a57",
+    "textDefault": "#0f172a",
+    "text-light": "#475569",
+    "text-dark": "#0c1a2b",
+    "primary-dark": "#38BDF8",
+    "secondary-dark": "#DFA3A8",
+    "accent-dark": "#027EBC"
+  }
 }

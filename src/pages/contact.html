@@ -1,4 +1,4 @@
-<section class="py-20">
+<section class="bg-bg-page dark:bg-bg-page-dark py-24">
   <div class="container mx-auto px-4 sm:px-6 lg:px-8">
     <div class="mb-12 text-center">
       <h1
@@ -24,11 +24,15 @@
           Send a Message
         </h2>
 
-        <form action="#" method="POST" class="space-y-6">
+        <form
+          action="#"
+          method="POST"
+          class="space-y-6 border border-black p-10 dark:border-white"
+        >
           <div>
             <label
               for="name"
-              class="text-text-default dark:text-text-default-dark mb-1 block text-sm font-medium"
+              class="mb-1 block text-sm font-medium text-black dark:text-white"
               >Full Name</label
             >
             <input
@@ -36,7 +40,7 @@
               id="name"
               name="name"
               required
-              class="border-default dark:border-border-dark text-text-default dark:text-text-default-dark focus:ring-secondary focus:border-secondary w-full rounded-lg border bg-white px-4 py-2 transition dark:bg-gray-800"
+              class="border-default dark:border-border-dark focus:ring-secondary focus:border-secondary w-full rounded-lg border bg-white px-4 py-2 text-black transition dark:bg-gray-800 dark:text-white"
               placeholder="Your Name"
             />
           </div>
@@ -105,7 +109,7 @@
       </div>
 
       <div
-        class="border-default dark:border-border-dark border-l p-8 lg:border-none"
+        class="border-default dark:border-border-dark bg-bg-surface dark:bg-bg-surface-dark rounded-xl border-l p-8 shadow-lg lg:border-none"
       >
         <h2
           class="text-text-default dark:text-text-default-dark mb-6 text-2xl font-semibold"

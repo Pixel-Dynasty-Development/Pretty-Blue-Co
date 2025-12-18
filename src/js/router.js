@@ -22,14 +22,21 @@ async function navigateTo(path) {
   if (routePath) {
     // 1. Load the new HTML content into the main container
     await loadHTML(routePath, appContainer);
+    activePageStyle(effectivePath);
 
     // 2. Optional: Scroll to the top of the new page
     window.scrollTo(0, 0);
 
     // 3. Optional: Update page title (can be improved)
-    document.title =
-      effectivePath.slice(1).charAt(0).toUpperCase() + effectivePath.slice(2) ||
-      "Home";
+
+    if (effectivePath !== "/") {
+      document.title =
+        "Pretty in Blue Co.-" +
+        effectivePath.slice(1).charAt(0).toUpperCase() +
+        effectivePath.slice(2);
+    } else {
+      document.title = "Pretty in Blue Co.";
+    }
   } else {
     // Handle 404 Not Found
     console.warn(`Route not found for path: ${path}`);
@@ -54,6 +61,18 @@ function handleLinkClick(e) {
     history.pushState({}, "", path);
     navigateTo(path);
   }
+}
+
+function activePageStyle(path) {
+  const links = document.querySelectorAll(".nav-link");
+  const currentPath = path === "/home" ? "/" : path;
+
+  links.forEach((link) => {
+    link.classList.remove("active");
+    if (link.getAttribute("href") === currentPath) {
+      link.classList.add("active");
+    }
+  });
 }
 
 /**

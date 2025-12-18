@@ -58,14 +58,9 @@ function applyThemeColors() {
   const colors = config.colors;
 
   if (colors) {
-    if (colors.primary)
-      root.style.setProperty("--color-primary", colors.primary);
-    if (colors.secondary)
-      root.style.setProperty("--color-secondary", colors.secondary);
-    if (colors.accent) root.style.setProperty("--color-accent", colors.accent);
-    if (colors.bgPage) root.style.setProperty("--color-bg-page", colors.bgPage);
-    if (colors.textDefault)
-      root.style.setProperty("--color-text-default", colors.textDefault);
+    for (const color in colors) {
+      root.style.setProperty(`--color-${color}`, colors[color]);
+    }
   }
 }
 
