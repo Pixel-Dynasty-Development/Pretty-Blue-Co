@@ -1,7 +1,8 @@
 {
-  "businessName": "Pretty Blue Co",
+  "businessName": "Pretty In Blue Co",
   "tagline": "I specialize in custom business and personal apparel! No order minimums!",
   "contactEmail": "prettyblueco@gmail.com",
+  "contactPhone": "555-123-4567",
   "foundingYear": "2025",
   "colors": {
     "primary": "#38BDF8",
@@ -20,7 +21,7 @@
     "text-light": "#475569",
     "text-dark": "#0c1a2b",
     "primary-dark": "#38BDF8",
-    "secondary-dark": "#DFA3A8",
+    "secondary-dark": "#FA8F98",
     "accent-dark": "#027EBC"
   }
 }
