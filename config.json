@@ -6,7 +6,7 @@
   "foundingYear": "2025",
   "colors": {
     "primary": "#38BDF8",
-    "secondary": "#F8C7CC",
+    "secondary": "#FFB3BA",
     "accent": "#0284C7",
     "bg-page": "#FFFFFFAC",
     "bg-page-light": "#f1f5f9",
@@ -15,13 +15,13 @@
     "bg-surface-light": "#e2e8f0",
     "bg-surface-dark": "#1E293B",
     "border": "#e2e8f0",
-    "border-light": "#cbd5e1",
-    "border-dark": "#1e3a57",
+    "border-light": "#000000",
+    "border-dark": "#FFFFFF",
     "textDefault": "#0f172a",
     "text-light": "#475569",
     "text-dark": "#0c1a2b",
     "primary-dark": "#38BDF8",
-    "secondary-dark": "#FA8F98",
+    "secondary-dark": "#FFB3BA",
     "accent-dark": "#027EBC"
   }
 }
