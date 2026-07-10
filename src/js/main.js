@@ -33,7 +33,7 @@ async function initializeApp() {
     "/": "src/pages/home.html",
     "/about": "src/pages/about.html",
     "/contact": "src/pages/contact.html",
-    "/signin": "src/portals/login.html",
+
     // Add more routes as needed
   };
 

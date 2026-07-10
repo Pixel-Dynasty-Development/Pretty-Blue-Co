@@ -1,178 +1,122 @@
-<section class="bg-bg-page dark:bg-bg-page-dark py-24">
+<section class="bg-bg-page py-24 dark:bg-bg-page-dark">
   <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="mb-12 text-center">
+    <div class="mb-16 text-center">
       <h1
-        class="text-text-default dark:text-text-default-dark mb-4 text-4xl leading-tight font-extrabold md:text-5xl"
+        class="mb-4 text-4xl font-extrabold text-text-default md:text-5xl dark:text-text-default-dark"
       >
-        Let's Build Something Efficient
+        Start Your Order
       </h1>
       <p
-        class="text-text-secondary dark:text-text-secondary-dark mx-auto max-w-3xl text-lg"
+        class="mx-auto max-w-2xl text-lg text-text-secondary dark:text-text-secondary-dark"
       >
-        Ready to discuss your project for Pixel Dynasty, The Bloom Foundation,
-        or Switch It? Fill out the form below or use our direct contact info.
+        Tell us about your custom apparel needs. We’ll get back to you with a
+        quote and a design proof shortly!
       </p>
     </div>
 
     <div class="grid grid-cols-1 gap-12 lg:grid-cols-3">
       <div
-        class="bg-surface dark:bg-bg-surface-dark rounded-xl p-8 shadow-lg lg:col-span-2"
+        class="border-default rounded-3xl border bg-white p-8 shadow-2xl lg:col-span-2 dark:border-border-dark dark:bg-gray-900"
       >
-        <h2
-          class="text-primary dark:text-primary-dark mb-6 text-2xl font-semibold"
-        >
-          Send a Message
-        </h2>
-
-        <form
-          action="#"
-          method="POST"
-          class="space-y-6 border border-black p-10 dark:border-white rounded-2xl"
-        >
-          <div>
-            <label
-              for="name"
-              class="mb-1 block text-sm font-medium text-black dark:text-white"
-              >Full Name</label
-            >
-            <input
-              type="text"
-              id="name"
-              name="name"
-              required
-              class="border-default dark:border-border-dark focus:ring-secondary focus:border-secondary w-full rounded-lg border bg-white px-4 py-2 text-black transition dark:bg-gray-800 dark:text-white"
-              placeholder="Your Name"
-            />
+        <form action="#" method="POST" class="space-y-6">
+          <div class="grid grid-cols-1 gap-6 md:grid-cols-2">
+            <div>
+              <label
+                class="mb-2 block text-sm font-bold text-text-default dark:text-text-default-dark"
+                >Name</label
+              >
+              <input
+                type="text"
+                required
+                class="w-full rounded-xl border border-gray-300 bg-transparent px-4 py-3 dark:border-gray-700"
+                placeholder="Jane Doe"
+              />
+            </div>
+            <div>
+              <label
+                class="mb-2 block text-sm font-bold text-text-default dark:text-text-default-dark"
+                >Email</label
+              >
+              <input
+                type="email"
+                required
+                class="w-full rounded-xl border border-gray-300 bg-transparent px-4 py-3 dark:border-gray-700"
+                placeholder="jane@example.com"
+              />
+            </div>
           </div>
 
           <div>
             <label
-              for="email"
-              class="text-text-default dark:text-text-default-dark mb-1 block text-sm font-medium"
-              >Email Address</label
-            >
-            <input
-              type="email"
-              id="email"
-              name="email"
-              required
-              class="border-default dark:border-border-dark text-text-default dark:text-text-default-dark focus:ring-secondary focus:border-secondary w-full rounded-lg border bg-white px-4 py-2 transition dark:bg-gray-800"
-              placeholder="you@example.com"
-            />
-          </div>
-
-          <div>
-            <label
-              for="project"
-              class="text-text-default dark:text-text-default-dark mb-1 block text-sm font-medium"
-              >Project Type</label
+              class="mb-2 block text-sm font-bold text-text-default dark:text-text-default-dark"
+              >Order Type</label
             >
             <select
-              id="project"
-              name="project"
               required
-              class="border-default dark:border-border-dark text-text-default dark:text-text-default-dark focus:ring-secondary focus:border-secondary w-full rounded-lg border bg-white px-4 py-2 transition dark:bg-gray-800"
+              class="w-full rounded-xl border border-gray-300 bg-transparent px-4 py-3 dark:border-gray-700 dark:text-white"
             >
-              <option value="">Select a Project Type...</option>
-              <option value="pd">
-                Pixel Dynasty Development (Client Project)
-              </option>
-              <option value="bloom">The Bloom Foundation (Non-Profit)</option>
-              <option value="switch">Switch It (Day Job)</option>
+              <option value="">What are we making?</option>
+              <option value="business">Business Branding (Bulk)</option>
+              <option value="personal">Personal Custom Shirt/Gift</option>
+              <option value="event">Event Apparel (Family/Club)</option>
               <option value="other">Other Inquiry</option>
             </select>
           </div>
 
           <div>
             <label
-              for="message"
-              class="text-text-default dark:text-text-default-dark mb-1 block text-sm font-medium"
-              >Message</label
+              class="mb-2 block text-sm font-bold text-text-default dark:text-text-default-dark"
+              >Tell us your idea</label
             >
             <textarea
-              id="message"
-              name="message"
-              rows="4"
+              rows="5"
               required
-              class="border-default dark:border-border-dark text-text-default dark:text-text-default-dark focus:ring-secondary focus:border-secondary w-full rounded-lg border bg-white px-4 py-2 transition dark:bg-gray-800"
-              placeholder="Tell us about your needs and deadline."
+              class="w-full rounded-xl border border-gray-300 bg-transparent px-4 py-3 dark:border-gray-700"
+              placeholder="Describe the item, quantity, and design you're looking for..."
             ></textarea>
           </div>
 
           <button
             type="submit"
-            class="bg-accent dark:bg-accent-dark w-full rounded-lg px-6 py-3 font-bold text-white shadow-md transition hover:opacity-90 md:w-auto"
+            class="w-full rounded-xl bg-primary px-8 py-4 text-lg font-bold text-white shadow-lg transition hover:scale-[1.02] dark:bg-primary-dark"
           >
             Send Inquiry
           </button>
         </form>
       </div>
 
-      <div
-        class="border-default dark:border-border-dark bg-bg-surface dark:bg-bg-surface-dark rounded-xl border-l p-8 shadow-lg lg:border-none"
-      >
-        <h2
-          class="text-text-default dark:text-text-default-dark mb-6 text-2xl font-semibold"
+      <div class="space-y-8">
+        <div
+          class="rounded-3xl border border-primary/20 bg-bg-surface p-8 dark:bg-bg-surface-dark"
         >
-          Direct Contact
-        </h2>
-
-        <div class="space-y-6">
-          <div>
-            <p class="text-primary dark:text-primary-dark font-medium">Email</p>
-            <a
-              href="mailto:{{contactEmail}}"
-              class="text-text-secondary dark:text-text-secondary-dark hover:text-secondary dark:hover:text-secondary-dark"
-            >
-              {{contactEmail}}
-            </a>
-          </div>
-          <div class="space-y-6">
+          <h2
+            class="mb-6 text-2xl font-bold text-text-default dark:text-text-default-dark"
+          >
+            Direct Contact
+          </h2>
+          <div class="space-y-4">
             <div>
-              <p class="text-primary dark:text-primary-dark font-medium">Phone</p>
+              <p class="text-sm font-bold text-primary uppercase">Email Us</p>
+              <a
+                href="mailto:{{contactEmail}}"
+                class="text-lg transition hover:text-secondary"
+                >{{contactEmail}}</a
+              >
+            </div>
+            <div>
+              <p class="text-sm font-bold text-primary uppercase">Call Us</p>
               <a
                 href="tel:{{contactPhone}}"
-                class="text-text-secondary dark:text-text-secondary-dark hover:text-secondary dark:hover:text-secondary-dark"
+                class="text-lg transition hover:text-secondary"
+                >{{contactPhone}}</a
               >
-                {{contactPhone}}
-              </a>
             </div>
-
-          <div>
-            <p class="text-primary dark:text-primary-dark font-medium">
-              Location
-            </p>
-            <p class="text-text-secondary dark:text-text-secondary-dark">
-              United States (EST/EDT)
-            </p>
-          </div>
-
-          <div>
-            <p class="text-primary dark:text-primary-dark font-medium">
-              Social
-            </p>
-            <a
-              href="#"
-              class="text-text-secondary dark:text-text-secondary-dark hover:text-secondary dark:hover:text-secondary-dark"
-            >
-              LinkedIn Profile
-            </a>
           </div>
         </div>
 
-        <div
-          class="border-accent dark:border-accent-dark mt-8 rounded-lg border bg-white p-4 dark:bg-gray-800"
-        >
-          <p
-            class="text-text-default dark:text-text-default-dark text-sm font-medium"
-          >
-            Have an idea you just want to discuss? Feel free to reach out!
-          </p>
-          <p
-            class="text-text-secondary dark:text-text-secondary-dark mt-1 text-xs"
-          >
-            We specialize in custom designs.
-          </p>
+        <div class="rounded-3xl bg-secondary p-8 text-white shadow-xl">
+          <h3 class="mb-2 text-xl font-bold">Fast Response!</h3>
+          <p>We typically respond to all apparel inquiries within 24 hours.</p>
         </div>
       </div>
     </div>
